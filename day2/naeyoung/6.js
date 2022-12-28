@@ -1,3 +1,5 @@
+// 문제점 : 얕은 복사된 객체로, 중첩된 객체가 있을 때에는 불변성을 지키지 못한다.
+
 class Product {
   #category;
   #name;
@@ -19,5 +21,5 @@ class Product {
   }
 }
 
-const book = new Product('book', 'refactoring2', { name: 'Lily' });
-book.owner.name = 'James';
+const book = new Product("book", "refactoring2", { name: "Lily" });
+book.owner.name = "James";

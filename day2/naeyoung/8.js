@@ -1,3 +1,5 @@
+// 문제점: range 부분의 값과 관련 로직이 분리되어 있어 응집도가 떨어진다.
+
 class NumberRange {
   #min;
   #max;
@@ -18,10 +20,10 @@ class NumberRange {
 }
 
 const products = [
-  { name: 'A', price: 10000 },
-  { name: 'B', price: 5000 },
-  { name: 'C', price: 2000 },
-  { name: 'D', price: 7000 },
+  { name: "A", price: 10000 },
+  { name: "B", price: 5000 },
+  { name: "C", price: 2000 },
+  { name: "D", price: 7000 },
 ];
 
 function getOutsideRangePrice(products, range) {
