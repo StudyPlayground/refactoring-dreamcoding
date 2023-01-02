@@ -1,13 +1,6 @@
 function isAllSame(arr) {
-  let min = Infinity;
-  let max = -Infinity;
-
-  arr.forEach((element) => {
-    if (element < min) min = element;
-    if (element > max) max = element;
-  });
-
-  return min === max;
+  const set = new Set(arr);
+  return set.size === 1;
 }
 
 console.log(isAllSame([1, 2, 3, 4, 5]));
