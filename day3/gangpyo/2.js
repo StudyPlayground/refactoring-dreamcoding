@@ -22,7 +22,7 @@ class TodoList {
   toggle(title) {
     this.todos = this.todos.map((todo) => {
       if (todo.title === title) {
-        return { title, done: !todo.done };
+        return new Todo(title, !todo.done);
       }
 
       return todo;
@@ -33,9 +33,9 @@ class TodoList {
 class Todo {
   title;
   done;
-  constructor(arg) {
-    this.title = arg;
-    this.done = false;
+  constructor(title, done = false) {
+    this.title = title;
+    this.done = done;
   }
   get title() {
     return this.title;
