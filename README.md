@@ -50,11 +50,14 @@
    - 강의 범위 : 9.데이터 조직화 ~ 10.조건부 로직 간소화
    - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day4/문제.md)
 - Day5
-   - 강의 범위 : 11.API 리팩터링 ~ 12.상속 다루기
+   - 강의 범위 : 11.API 리팩터링
    - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day5/문제.md)
 - Day6
-   - 강의 범위 : 13.최종 챌린지 ~ 15.마무리
+   - 강의 범위 : 12.상속 다루기
    - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day6/문제.md)
+- Day7
+   - 강의 범위 : 13.최종 챌린지 ~ 15.마무리
+   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day7/문제.md)
 
 <br>
 
