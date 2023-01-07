@@ -1,5 +1,3 @@
-// 관련된 데이터와 로직을 클래스로 묶어 캡슐화하였습니다.
-
 class User {
   #name;
   #consumption;

@@ -1,6 +1,3 @@
-// UserList 클래스의 불변성을 유지하기 위해 addUser 메서드에서 새로운 배열을 할당하도록 하였습니다.
-// 이름이 없는 User의 경우 John으로 할당되도록 하였습니다.
-
 class User {
   #name;
 
