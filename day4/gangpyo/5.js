@@ -10,7 +10,7 @@ class User {
 
 class UnknownUser extends user {
   constructor() {
-    super("John"); // "john"이라는 이름보단 알려지지 않은 유저가 적합할것같습니다!
+    super("John");
   }
 }
 
