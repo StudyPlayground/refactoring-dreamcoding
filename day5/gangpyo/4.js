@@ -1,3 +1,4 @@
+// 함수 매개변수화 하기
 const HALF = 0.5;
 const QUARTER = 0.25;
 
