@@ -2,35 +2,29 @@
 let seoulTrafficLight = "RED";
 let jejuTrafficLight = "GREEN";
 
-function message(light, optionMessage) {
-  if (light === "RED") {
-    console.log("🔴 -> 🟡 -> 🟢 " + optionMessage);
-
-    return;
-  }
-
-  if (light === "GREEN") {
-    console.log("🟢 -> 🟡 -> 🔴 " + optionMessage);
-
-    return;
-  }
+function printTransitionToGreen(optionMessage) {
+  console.log("🔴 -> 🟡 -> 🟢 " + optionMessage);
 }
 
-function changeToGreenLight(redLight) {
-  message(redLight, "출발하세요.");
+function printTransitionToRed(optionMessage) {
+  console.log("🟢 -> 🟡 -> 🔴 " + optionMessage);
+}
+
+function changeToGreenLight(message) {
+  printTransitionToGreen(message);
 
   return "GREEN";
 }
 
-function changeToRedLight(greenLight) {
-  message(greenLight, "속도를 줄이세요.");
+function changeToRedLight(message) {
+  printTransitionToRed(message);
 
   return "RED";
 }
 
-seoulTrafficLight = changeToGreenLight(seoulTrafficLight);
-seoulTrafficLight = changeToRedLight(seoulTrafficLight);
-seoulTrafficLight = changeToGreenLight(seoulTrafficLight);
-jejuTrafficLight = changeToRedLight(jejuTrafficLight);
-jejuTrafficLight = changeToGreenLight(jejuTrafficLight);
-jejuTrafficLight = changeToRedLight(jejuTrafficLight);
+seoulTrafficLight = changeToGreenLight("출발하세요");
+seoulTrafficLight = changeToRedLight("속도를 줄이세요.");
+seoulTrafficLight = changeToGreenLight("출발하세요");
+jejuTrafficLight = changeToRedLight("속도를 줄이세요.");
+jejuTrafficLight = changeToGreenLight("출발하세요");
+jejuTrafficLight = changeToRedLight("속도를 줄이세요.");
