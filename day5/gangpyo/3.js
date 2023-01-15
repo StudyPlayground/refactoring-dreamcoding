@@ -1,3 +1,5 @@
+// 오류코드를 예외로 바꾸기
+// 예외를 사전 확인으로 바꾸기
 function orderProduct(name, count, orderTime, requestMessage) {
   if (!name) {
     throw new OrderProcessingError("상품명을 입력해주세요.");
