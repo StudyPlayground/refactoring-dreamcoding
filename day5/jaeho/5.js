@@ -25,9 +25,6 @@ class Customer {
     return this.#type;
   }
 
-  static get customerTypes() {
-    return ["NORMAL", "VIP"];
-  }
   static createNormal(...args) {
     return new Customer(...args, "NORMAL");
   }
