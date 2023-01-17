@@ -1,10 +1,25 @@
 // 객체 통째로 넘기기
+class Person {
+  #name;
+  #kg;
+  #height;
+  constructor(person) {
+    this.#name = person.name;
+    this.#kg = person.kg;
+    this.#height = person.height;
+  }
+
+  get name() {
+    return this.#name;
+  }
+
+  get BMI() {
+    return (this.#kg / (this.#height * this.#height)) * 10000;
+  }
+}
+
 function printBMI(person) {
-  console.log(
-    `${person.name}님의 BMI는 ${
-      (person.kg / (person.height * person.height)) * 10000
-    }입니다`
-  );
+  console.log(`${person.name}님의 BMI는 ${person.BMI}입니다`);
 }
 
 const person = {
@@ -13,4 +28,5 @@ const person = {
   height: 160,
 };
 
-printBMI(person);
+const Lily = new Person(person);
+printBMI(Lily);
