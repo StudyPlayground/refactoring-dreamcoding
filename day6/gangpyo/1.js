@@ -1,25 +1,31 @@
-// 위임을 상속으로 변경하기
-
+//계층 합치기
 class Dog {
-  speak() {
-    console.log("Bark !!");
+  #type;
+  #barkSound;
+  constructor(type, barkSound) {
+    this.#type = type;
+    this.#barkSound = barkSound;
   }
-}
-class Pomeranian extends Dog {
+
   speak() {
-    console.log("Pome ~!");
+    console.log(this.#barkSound);
+  }
+
+  static create(type) {
+    switch (type) {
+      case "Pomeranian":
+        return new Dog("Pomeranian", "Pome ~!");
+      case "WelshCorgi":
+        return new Dog("WelshCorgi", "Corgi ~~");
+      default:
+        return new Dog("unknownType", "Bark !!");
+    }
   }
 }
 
-class WelshCorgi extends Dog {
-  speak() {
-    console.log("Corgi ~~");
-  }
-}
-
-const pome = new Pomeranian();
-const corgi = new WelshCorgi();
-const dog = new Dog();
+const pome = Dog.create("Pomeranian");
+const corgi = Dog.create("WelshCorgi");
+const dog = Dog.create();
 
 pome.speak();
 corgi.speak();
