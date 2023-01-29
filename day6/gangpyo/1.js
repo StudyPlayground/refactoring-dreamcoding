@@ -1,4 +1,4 @@
-//계층 합치기
+//클래스를 타입으로 변경하기..?
 class Dog {
   #type;
   #barkSound;
