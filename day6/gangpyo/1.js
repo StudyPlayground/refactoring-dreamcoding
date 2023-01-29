@@ -1,35 +1,24 @@
-// 위임으로 바꾸기..?
-class Pomeranian {
+// 위임을 상속으로 변경하기
+
+class Dog {
+  speak() {
+    console.log("Bark !!");
+  }
+}
+class Pomeranian extends Dog {
   speak() {
     console.log("Pome ~!");
   }
 }
 
-class WelshCorgi {
+class WelshCorgi extends Dog {
   speak() {
     console.log("Corgi ~~");
   }
 }
 
-class Dog {
-  #type;
-
-  constructor(type = null) {
-    this.#type = type;
-  }
-
-  speak() {
-    if (this.#type === null) {
-      console.log("Bark !!");
-
-      return;
-    }
-    this.#type.speak();
-  }
-}
-
-const pome = new Dog(new Pomeranian());
-const corgi = new Dog(new WelshCorgi());
+const pome = new Pomeranian();
+const corgi = new WelshCorgi();
 const dog = new Dog();
 
 pome.speak();
