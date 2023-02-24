@@ -42,19 +42,19 @@
    - 이론적인 내용으로 출제된 문제가 없습니다.
 - Day2
    - 강의 범위 : 6.기본적인 리팩터링
-   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day2/문제.md)
+   - [문제](https://github.com/StudyPlayground/refactoring-dreamcoding/blob/main/day2/문제.md)
 - Day3
    - 강의 범위 : 7.캡슐화 ~ 8.기능 이동
-   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day3/문제.md)
+   - [문제](https://github.com/StudyPlayground/refactoring-dreamcoding/blob/main/day3/문제.md)
 - Day4
    - 강의 범위 : 9.데이터 조직화 ~ 10.조건부 로직 간소화
-   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day4/문제.md)
+   - [문제](https://github.com/StudyPlayground/refactoring-dreamcoding/blob/main/day4/문제.md)
 - Day5
    - 강의 범위 : 11.API 리팩터링
-   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day5/문제.md)
+   - [문제](https://github.com/StudyPlayground/refactoring-dreamcoding/blob/main/day5/문제.md)
 - Day6
    - 강의 범위 : 12.상속 다루기
-   - [문제](https://github.com/study-about-all/refactoring-dreamcoding/blob/main/day6/문제.md)
+   - [문제](https://github.com/StudyPlayground/refactoring-dreamcoding/blob/main/day6/문제.md)
 
 <br>
 
